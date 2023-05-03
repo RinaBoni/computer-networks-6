@@ -1,10 +1,10 @@
-import scapy.all as scrapy
+import scapy.all as scapy
 
 def sniff(interface):
-    scrapy.sniff(iface=interface, store=False, prn=process_sniffed_packet, filter="sip")
+    scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet, filter="sip")
 
 def process_sniffed_packet(packet):
-    print(packet)
+    print(packet.show())
 
 
-sniff('Ethernet')#здесь должно быть название сетевого интерфейса, но я не могу его найти
+sniff('Ethernet')
