@@ -7,4 +7,4 @@ def process_sniffed_packet(packet):
     print(packet.show())
 
 
-sniff('Ethernet')
+sniff('Беспроводная сеть')
