@@ -17,3 +17,4 @@ SIP – это протокол прикладного уровня модели
 ##  Реализовать SNMP агент и менеджер для сбора сведений о программно-аппаратной части сетевых узлов
 
 [очннь полезная информация](https://selectel.ru/blog/snmp/)
+[Мониторинг сетей при помощи Python](http://onreader.mdl.ru/MasteringPythonNetworking/content/Ch07.html)
