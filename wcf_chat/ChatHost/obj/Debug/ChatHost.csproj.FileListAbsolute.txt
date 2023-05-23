@@ -1,0 +1,12 @@
+C:\study\computer-networks-6\wcf_chat\ChatHost\bin\Debug\ChatHost.exe.config
+C:\study\computer-networks-6\wcf_chat\ChatHost\bin\Debug\ChatHost.exe
+C:\study\computer-networks-6\wcf_chat\ChatHost\bin\Debug\ChatHost.pdb
+C:\study\computer-networks-6\wcf_chat\ChatHost\bin\Debug\wcf_chat.dll
+C:\study\computer-networks-6\wcf_chat\ChatHost\bin\Debug\wcf_chat.pdb
+C:\study\computer-networks-6\wcf_chat\ChatHost\bin\Debug\wcf_chat.dll.config
+C:\study\computer-networks-6\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.AssemblyReference.cache
+C:\study\computer-networks-6\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.SuggestedBindingRedirects.cache
+C:\study\computer-networks-6\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+C:\study\computer-networks-6\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+C:\study\computer-networks-6\wcf_chat\ChatHost\obj\Debug\ChatHost.exe
+C:\study\computer-networks-6\wcf_chat\ChatHost\obj\Debug\ChatHost.pdb
