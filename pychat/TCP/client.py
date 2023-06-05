@@ -11,34 +11,29 @@ while not nickname:
 # Создаем сокет.
 # Первый параметр указывает на то, какое адресное пространство будет использовать (IPv4).
 # Второй параметр указывает на используемый протокол (TCP)
-my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Адрес хоста
 host = "localhost"  # "127.0.1.1"
 port = 8000
 # Подключаемся к серверу
-my_socket.connect((host, port))
-
-# Сообщаем серверу, что подключились
-my_socket.send('__join'.encode('ascii'))
+s.connect((host, port))
 
 
 def thread_sending():
     """Отправка"""
     while True:
         # Записываем полученное сообщение
-
         message_to_send = input(f'{nickname}: ')
         # Если сообщение не пустое соединяем его с ником и отправляем на сервер
         if message_to_send:
             message_with_nickname = nickname + " : " + message_to_send
-            my_socket.send(message_with_nickname.encode())
+            s.send(message_with_nickname.encode())
 
 
 def thread_receiving():
     """Прослушивание"""
     while True:
-        message = my_socket.recv(1024).decode()
-        #print(message)
+        message = s.recv(1024).decode()
         print('\r\r' + message + '\n' + f'{nickname}: ', end='')
 
 
