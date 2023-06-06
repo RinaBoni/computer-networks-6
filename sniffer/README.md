@@ -2,6 +2,8 @@
 
 [sip](https://translated.turbopages.org/proxy_u/en-ru.ru.5355f33e-64509de2-0af0cbee-74722d776562/https/www.tutorialspoint.com/session_initiation_protocol/session_initiation_protocol_quick_guide.htm)
 
+[видео](https://www.youtube.com/playlist?list=PLVn0GO8KywWOaqcTT_uWDt10Iquitc8yX) про sip и Asterisk
+
 * использовать программу виртулальный телефон или Asterisk. 
 * Сделать маленькую телефонию (хотя бы на 2 телефона).
 * Сниффер должен показывать какие именно запросы и ответы присылаются (показывать содержимое пакетов)
