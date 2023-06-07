@@ -18,7 +18,7 @@ def listen(host: str = socket.gethostbyname((socket.gethostname())), port: int =
     members = []
     while True:
         message, addr = s.recvfrom(UDP_MAX_SIZE)        # Слушаем порт. Адрес откуда пришел пакет
-        print(addr)
+        print(f'reciv msg:z{message}')
         # Проверяем есть ли клиент в списке участников
         if addr not in members:
             members.append(addr)

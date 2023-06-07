@@ -1,5 +1,5 @@
 import subprocess
-import psutil
+#import psutil
 
 print('Запустить udp или tcp чат?')
 answer = input()
