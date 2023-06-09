@@ -1,12 +1,18 @@
 import scapy.all as scapy
-import sipping
 import socket
 import sip
+import pandas as pd
 
 UDP_MAX_SIZE = 65535  # максимальный размер udp пакета
 
 host = socket.gethostbyname((socket.gethostname()))
 port = 5060
+
+def to_cvs (type_of_packet, message):
+    df = pd.DataFrame({'Type': 'SIP '[type_of_packet], 'Message': [message]})
+    # Записываем DataFrame в файл CSV
+    df.to_csv('packets.csv', mode='a', header=False, index=False)
+    
 
 def listen(host, port):
     """Функция для запуска сервера. На вход принимает адрес сервера и порт"""
@@ -23,7 +29,19 @@ def listen(host, port):
     # Сервер в бесконечном цикле слушает клиентов и отправляет уведомления о сообщениях
     while (True):
         message, addr = s.recvfrom(UDP_MAX_SIZE)
-        print(f'reciv msg:z{message}')
+        print(message)
+        
+        # Открываем файл для записи
+        file = open('sip.txt', 'w')
+        
+        msg = message.decode()
+        
+        if (message.decode() == sip.message_ACK):
+            
+            to_cvs('ACK', msg)
+            
+        # Закрываем файл
+        file.close()
         
     
     
