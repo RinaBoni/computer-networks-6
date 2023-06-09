@@ -1,3 +1,4 @@
+`py sipping.py -r test-template.txt -d 192.168.0.14 -p 5060 -S 192.168.0.10 -P 5061 -c 3 -vuser:120 -v destination:192.168.20.1 -v port:5060`
 # SIPPing Python SIP Packet forging tool
 
 SIPPing is a simple SIP packet forging tool written in pure Python.
