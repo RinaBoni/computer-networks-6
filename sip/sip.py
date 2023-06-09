@@ -8,7 +8,7 @@ message_INVITE = "INVITE sip:alice@example.com SIP/2.0\r\n" \
           "Contact: <sip:bob@example.com>\r\n" \
           "Content-Type: application/sdp\r\n" \
           "Content-Length: 0\r\n\r\n"
-          
+
 # Формируем пакет SIP REGISTER
 message_REGISTER = "REGISTER sip:example.com SIP/2.0\r\n" \
           "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -18,7 +18,7 @@ message_REGISTER = "REGISTER sip:example.com SIP/2.0\r\n" \
           "CSeq: 1 REGISTER\r\n" \
           "Contact: <sip:bob@192.168.0.10:5061>\r\n" \
           "Content-Length: 0\r\n\r\n"
-          
+
 # Формируем пакет SIP ACK
 message_ACK = "ACK sip:alice@example.com SIP/2.0\r\n" \
           "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -27,7 +27,7 @@ message_ACK = "ACK sip:alice@example.com SIP/2.0\r\n" \
           "Call-ID: 1234567890@192.168.0.10\r\n" \
           "CSeq: 1 ACK\r\n" \
           "Content-Length: 0\r\n\r\n"
-          
+
 # Формируем пакет SIP BYE
 message_BYE = "BYE sip:alice@example.com SIP/2.0\r\n" \
           "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -36,7 +36,7 @@ message_BYE = "BYE sip:alice@example.com SIP/2.0\r\n" \
           "Call-ID: 1234567890@192.168.0.10\r\n" \
           "CSeq: 2 BYE\r\n" \
           "Content-Length: 0\r\n\r\n"
-          
+
 # Формируем пакет SIP CANCEL
 message_CANCEL = "CANCEL sip:alice@example.com SIP/2.0\r\n" \
           "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -64,7 +64,7 @@ message_UPDATE = "UPDATE sip:alice@example.com SIP/2.0\r\n" \
                  "m=audio 1234 RTP/AVP 0 8\r\n" \
                  "a=rtpmap:0 PCMU/8000\r\n" \
                  "a=rtpmap:8 PCMA/8000\r\n"
-                 
+
 # Формируем пакет SIP REFER
 message_REFER = "REFER sip:carol@example.com SIP/2.0\r\n" \
                 "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -76,7 +76,7 @@ message_REFER = "REFER sip:carol@example.com SIP/2.0\r\n" \
                 "Referred-By: <sip:bob@example.com>\r\n" \
                 "Content-Length: 0\r\n" \
                 "\r\n"    
-                
+
 # Формируем пакет SIP PRACK
 message_PRACK = "PRACK sip:alice@example.com SIP/2.0\r\n" \
                 "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -85,7 +85,7 @@ message_PRACK = "PRACK sip:alice@example.com SIP/2.0\r\n" \
                 "Call-ID: 1234567890@192.168.0.10\r\n" \
                 "CSeq: 2 PRACK\r\n" \
                 "Content-Length: 0\r\n\r\n"  
-                
+
 # Формируем пакет SIP SUBSCRIBE
 message_SUBSCRIBE = "SUBSCRIBE sip:alice@example.com SIP/2.0\r\n" \
                     "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -118,7 +118,7 @@ message_NOTIFY = "NOTIFY sip:bob@example.com SIP/2.0\r\n" \
                  "</status>" \
                  "<contact>sip:alice@example.com</contact>" \
                  "</tuple></presence>"
-                 
+
 # Формируем пакет SIP PUBLISH
 message_PUBLISH = "PUBLISH sip:alice@example.com SIP/2.0\r\n" \
                   "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \
@@ -139,7 +139,7 @@ message_PUBLISH = "PUBLISH sip:alice@example.com SIP/2.0\r\n" \
                   "</status>" \
                   "<contact>sip:bob@example.com</contact>" \
                   "</tuple></presence>"
-                  
+
 # Формируем пакет SIP MESSAGE
 message_MESSAGE = "MESSAGE sip:alice@example.com SIP/2.0\r\n" \
                   "Via: SIP/2.0/UDP 192.168.0.10:5061\r\n" \

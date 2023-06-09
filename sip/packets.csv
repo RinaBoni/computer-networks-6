@@ -1,9 +1,0 @@
-SIP ACK,"ACK sip:alice@example.com SIP/2.0
-Via: SIP/2.0/UDP 192.168.0.10:5061
-From: <sip:bob@example.com>;tag=12345
-To: <sip:alice@example.com>;tag=54321
-Call-ID: 1234567890@192.168.0.10
-CSeq: 1 ACK
-Content-Length: 0
-
-"
