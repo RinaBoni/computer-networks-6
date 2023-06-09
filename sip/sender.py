@@ -14,7 +14,7 @@ source_address = (socket.gethostbyname((socket.gethostname())), 5061)
 s.bind((host, port))
 
 # Указываем адрес и порт получателя
-destination_address = ('192.168.43.21', 5060)
+destination_address = (socket.gethostbyname((socket.gethostname())), 5060)
 
 # i = 0
 while (True):

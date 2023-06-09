@@ -47,13 +47,11 @@ def listen(host, port):
         file = open('sip.txt', 'w')
         
         msg = message.decode()
-        print(msg)
 
         if (msg == sip.message_BYE or msg == sip.message_ACK or msg == sip.message_CANCEL or msg == sip.message_INFO or msg == sip.message_INVITE or msg == sip.message_MESSAGE or msg == sip.message_NOTIFY or msg == sip.message_OPTIONS or msg == sip.message_PRACK or msg == sip.message_PUBLISH or msg == sip.message_REFER or msg == sip.message_REGISTER or msg == sip.message_UPDATE or msg == sip.message_SUBSCRIBE):
             # to_dataframe(msg)
             df = pd.DataFrame({'Message': [msg]})
             df.to_csv('packets.csv', mode='a', header=False, index=False)
-            print(msg)
             
             
         # Закрываем файл
