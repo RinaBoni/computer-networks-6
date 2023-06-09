@@ -5,10 +5,10 @@ import sip
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Указываем адрес и порт отправителя
-source_address = ('192.168.0.10', 5061)
+source_address = ('192.168.0.14', 5061)
 
 # Указываем адрес и порт получателя
-destination_address = ('192.168.0.14', 5060)
+destination_address = ('192.168.0.10', 5060)
 
 i = 0
 while (True):
