@@ -15,7 +15,10 @@ s.bind((host, port))
 
 # Указываем адрес и порт получателя
 destination_address = (socket.gethostbyname((socket.gethostname())), 5060)
+<<<<<<< HEAD
 print(f'Senging from: {source_address} to: {destination_address}')
+=======
+>>>>>>> 0cbdef1ac659e4ad9c6117767803fbb58160423c
 
 i = 0
 while (i<10):

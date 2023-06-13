@@ -31,7 +31,6 @@ def listen(host, port):
             
             df = pd.DataFrame({'Message': [msg]})
             df.to_csv('packets.csv', mode='a', header=False, index=False)
-            print(msg)
             
 
 if __name__ == '__main__':
