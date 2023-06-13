@@ -14,10 +14,11 @@ source_address = (socket.gethostbyname((socket.gethostname())), 5061)
 s.bind((host, port))
 
 # Указываем адрес и порт получателя
-destination_address = ('192.168.43.21', 5060)
+destination_address = (socket.gethostbyname((socket.gethostname())), 5060)
+print(f'Senging from: {source_address} to: {destination_address}')
 
-# i = 0
-while (True):
+i = 0
+while (i<10):
 
     # Отправляем пакет на получателя
     s.sendto(sip.message_INVITE.encode(), destination_address)
@@ -36,8 +37,7 @@ while (True):
     s.sendto(random_packets.message_NOhgfdsTIFY.encode(), destination_address)
     s.sendto(random_packets.message_NOTIkjhgfjhgFY.encode(), destination_address)
 
-    
-#     i+=1
+    i+=1
     
 #     if (i>5):
 #         break

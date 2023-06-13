@@ -1,0 +1,18 @@
+def to_cvs (type_of_packet, message):
+    # df = pd.DataFrame({'Type': 'SIP '[type_of_packet], 'Message': [message]})
+    df = pd.DataFrame({'Type': ["SIP", ""][type_of_packet], 'Message': [message]})
+    # Записываем DataFrame в файл CSV
+    df.to_csv('packets.csv', mode='a', header=False, index=False)
+    print('занес')
+
+def to_dataframe(msg):
+    """заносим все в датафрейм и в csv файл"""
+    #заносим все в датафрейм
+    df = pd.DataFrame(msg)
+    #создаем файл csv
+    filename = 'packets.csv'
+    #заносим датафрейм в csv файл
+    df.to_csv(filename)
+
+    
+
