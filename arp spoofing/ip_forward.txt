@@ -1,0 +1,22 @@
+PS C:\WINDOWS\system32> netsh
+netsh>interface ipv4
+netsh interface ipv4>show inerfaces
+Команда show inerfaces не найдена.
+netsh interface ipv4>show interfaces
+
+Инд     Мет         MTU          Состояние               Имя
+---  ----------  ----------  ------------  ---------------------------
+  1          75  4294967295  connected     Loopback Pseudo-Interface 1
+  5          35        1500  connected     Ethernet
+ 26          15        1500  connected     vEthernet (Default Switch)
+ 11          25        1500  connected     VirtualBox Host-Only Network
+ 10          35        1500  connected     VMware Network Adapter VMnet1
+  8          35        1500  connected     VMware Network Adapter VMnet8
+
+netsh interface ipv4>set interface 5 forwarding="enable"
+ОК.
+
+netsh interface ipv4>set interface 26 forwarding="enable"
+ОК.
+
+netsh interface ipv4>
